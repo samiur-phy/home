@@ -19,7 +19,7 @@ a:hover {
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%) ;
-    text-align: left;
+    text-align: center;
     /* max-width: 520px; */
     padding: 32px;
     line-height: 1.6em;
@@ -36,7 +36,7 @@ h1 {
 } */
 
 .avatar {
-    max-width: 60%;    /* responsive image */
+    max-width: 40%;    /* responsive image */
     height: auto;       /* keep aspect ratio */
     border-radius: 0;   /* rectangular */
 }

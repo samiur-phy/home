@@ -36,7 +36,7 @@ h1 {
 } */
 
 .avatar {
-    max-width: 100%;    /* responsive image */
+    max-width: 60%;    /* responsive image */
     height: auto;       /* keep aspect ratio */
     border-radius: 0;   /* rectangular */
 }

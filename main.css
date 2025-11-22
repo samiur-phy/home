@@ -55,6 +55,14 @@ h1 {
     }
 }
 
+/* FIX: Ensure parent doesn't crop image */
+.avatar-container,
+.avatar-wrapper,
+.avatar-box {
+    overflow: visible !important;
+    height: auto !important;
+}
+
 div {
       text-align: center;
     }

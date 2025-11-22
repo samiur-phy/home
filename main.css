@@ -43,7 +43,7 @@ h1 {
 } */
 
 .avatar {
-    width: 25%;
+    max-width: 25%;
     /* max-width: 300px;   /* optional */ */
     height: auto;
 }
@@ -51,7 +51,7 @@ h1 {
 @media (max-width: 600px) {
     .avatar {
         /* width: 100%;     /* or 100% */ */
-        max-width: none;
+        max-width: 70%;
     }
 }
 

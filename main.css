@@ -35,16 +35,11 @@ h1 {
     width: 150px;
 } */
 
-/* .avatar {
+.avatar {
     max-width: 25%;    /* responsive image */
     height: auto;       /* keep aspect ratio */
     object-fit: contain;
     /* border-radius: 0;   /* rectangular */ */
-} */
-
-.avatar {
-    max-width: 25%;
-    height: auto;
 }
 
 div {

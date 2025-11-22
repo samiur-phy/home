@@ -44,7 +44,6 @@ h1 {
 
 .avatar {
     max-width: 25%;
-    /* max-width: 300px;   /* optional */ */
     height: auto;
 }
 
@@ -55,13 +54,6 @@ h1 {
     }
 }
 
-/* FIX: Ensure parent doesn't crop image */
-.avatar-container,
-.avatar-wrapper,
-.avatar-box {
-    overflow: visible !important;
-    height: auto !important;
-}
 
 div {
       text-align: center;

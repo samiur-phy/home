@@ -50,7 +50,7 @@ h1 {
 
 @media (max-width: 600px) {
     .avatar {
-        width: 80%;     /* or 100% */
+        width: 100%;     /* or 100% */
         max-width: none;
     }
 }

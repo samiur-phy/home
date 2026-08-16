@@ -3,6 +3,26 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+          <h2>Contact</h2>
+      <p>
+        <!-- EDIT: replace with the address you want public. Assembling it in
+             script is a mild deterrent against scrapers, nothing more. -->
+        <span id="email"></span>
+      </p>
+      <script>
+        (function () {
+          var user = "your.name";
+          var host = "example.edu";
+          var el = document.getElementById("email");
+          var a = document.createElement("a");
+          a.href = "mailto:" + user + "@" + host;
+          a.textContent = user + "@" + host;
+          el.appendChild(a);
+        })();
+      </script>
+
+
     <title>CV &middot; Samiur R. Mir</title>
     <meta
       name="description"
@@ -18,19 +38,21 @@
     />
   </head>
   <body>
+    <!-- EDIT: this masthead block is identical on every page. Change it here
+         first, then paste it into the other four files. -->
     <header class="masthead">
       <div>
         <p class="masthead-name"><a href="index.html">Samiur R. Mir</a></p>
         <p class="masthead-role">
-          Particle phenomenologist &mdash; neutrinos and dark matter
+          <!-- theoretical particle physicist working on Beyond the Standard Model phenomenology, particularly interested in neutrinos and dark matter -->
         </p>
       </div>
       <address class="masthead-contact">
-        <span class="place">Department of Physics</span>
-        <span class="street">Your institution</span>
-        <span class="street">Street address, City, State ZIP</span>
-        <span class="sep"></span>
-        <a href="mailto:your.name@example.edu">your.name@example.edu</a>
+        <!-- <span class="place">Department of Physics</span> -->
+        <!-- <span class="street">Oklahoma State U.</span> -->
+        <!-- <span class="street">Street address, City, State ZIP</span> -->
+        <!-- <span class="sep"></span> -->
+        <a href="mailto:your.name@example.edu">samiur.mir@okstate.edu</a>
       </address>
     </header>
 
@@ -55,88 +77,40 @@
         <span class="note">&mdash; last updated August 2026</span>
       </p>
 
-      <h2>Profiles</h2>
-      <ul class="link-list">
+      <!-- Icons -->
+      <ul class="icons">
         <li>
-          <a
-            href="https://inspirehep.net/authors/1905709"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <span class="link-name">INSPIRE-HEP</span>
-            <span class="link-detail">Complete publication and citation record</span>
+        <a href="https://inspirehep.net/authors/1905709" title="INSPIRE-HEP" target="_blank" rel="noopener noreferrer">
+        <img src="inspire.png" alt="INSPIRE-HEP" class="icon" />
+        </a>
+        </li>
+        
+        <li>
+          <a href="https://scholar.google.com/citations?user=FG7m9tgAAAAJ&hl=en" title="Google Scholar">
+            <i class="ai ai-google-scholar"></i>
           </a>
         </li>
+
+
         <li>
-          <a
-            href="https://scholar.google.com/citations?user=FG7m9tgAAAAJ&hl=en"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <span class="link-name">Google Scholar</span>
-            <span class="link-detail">Citations across fields</span>
+          <a href="https://github.com/samiur06" title="GitHub">
+            <i class="fab fa-github"></i>
           </a>
         </li>
+
         <li>
-          <a
-            href="https://arxiv.org/a/mir_s_1"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <span class="link-name">arXiv</span>
-            <span class="link-detail">
-              Preprints
-              <!-- EDIT: confirm this author identifier resolves, or delete. -->
-            </span>
+          <a href="https://www.linkedin.com/in/md-samiur-rahman-mir/" title="LinkedIn">
+            <i class="fab fa-linkedin"></i>
           </a>
         </li>
+
         <li>
-          <a
-            href="https://github.com/samiur06"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <span class="link-name">GitHub</span>
-            <span class="link-detail">Analysis code and this site</span>
+          <a href="CV-samiur.pdf" title="CV" target="_blank" rel="noopener noreferrer">
+            <i class="ai ai-cv"></i>
           </a>
         </li>
-        <li>
-          <a
-            href="https://www.linkedin.com/in/md-samiur-rahman-mir/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <span class="link-name">LinkedIn</span>
-            <span class="link-detail">Professional background</span>
-          </a>
-        </li>
-        <!-- EDIT: uncomment and fill in once you have an ORCID.
-        <li>
-          <a href="https://orcid.org/0000-0000-0000-0000" target="_blank" rel="noopener noreferrer">
-            <span class="link-name">ORCID</span>
-            <span class="link-detail">0000-0000-0000-0000</span>
-          </a>
-        </li>
-        -->
       </ul>
 
-      <h2>Contact</h2>
-      <p>
-        <!-- EDIT: replace with the address you want public. Assembling it in
-             script is a mild deterrent against scrapers, nothing more. -->
-        <span id="email"></span>
-      </p>
-      <script>
-        (function () {
-          var user = "your.name";
-          var host = "example.edu";
-          var el = document.getElementById("email");
-          var a = document.createElement("a");
-          a.href = "mailto:" + user + "@" + host;
-          a.textContent = user + "@" + host;
-          el.appendChild(a);
-        })();
-      </script>
     </main>
 
     <footer class="site-footer">

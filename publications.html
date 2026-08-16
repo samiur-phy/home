@@ -17,131 +17,206 @@
       href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.2/css/academicons.min.css"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
-    <header class="masthead">
-      <div>
-        <p class="masthead-name"><a href="index.html">Samiur R. Mir</a></p>
+    <div class="layout">
+      <aside class="sidebar">
+        <img
+          src="webpics/IMG_1895.jpg"
+          alt="Samiur R. Mir"
+          class="sidebar-portrait"
+        />
+
+        <p class="sidebar-name"><a href="index.html">Samiur R. Mir</a></p>
+
+        <p class="sidebar-role">
+          Ph.D. Student, Department of Physics<br />
+          Oklahoma State University
+        </p>
+
+        <p class="sidebar-email">
+          <a href="mailto:samiur.mir@okstate.edu">samiur.mir@okstate.edu</a>
+        </p>
+
+        <ul class="sidebar-icons">
+          <li>
+            <a
+              href="https://inspirehep.net/authors/1905709"
+              title="INSPIRE-HEP"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="inspire.png" alt="INSPIRE-HEP" class="icon" />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://scholar.google.com/citations?user=FG7m9tgAAAAJ&hl=en"
+              title="Google Scholar"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="ai ai-google-scholar" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/samiur06"
+              title="GitHub"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fab fa-github" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/md-samiur-rahman-mir/"
+              title="LinkedIn"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fab fa-linkedin" aria-hidden="true"></i>
+            </a>
+          </li>
+        </ul>
+
+        <nav class="sidebar-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li>
+              <a href="publications.html" aria-current="page">Publications</a>
+            </li>
+            <li><a href="talks.html">Talks</a></li>
+            <li><a href="cv.html">CV</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <div class="content">
+        <main class="page">
+          <h1>Publications</h1>
+
+          <p>
+            The complete record is on
+            <a
+              href="https://inspirehep.net/authors/1905709"
+              target="_blank"
+              rel="noopener noreferrer"
+              >INSPIRE-HEP</a
+            >
+            and
+            <a
+              href="https://scholar.google.com/citations?user=FG7m9tgAAAAJ&hl=en"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Google Scholar</a
+            >.
+          </p>
+
+          <h2>Selected</h2>
+
+          <!-- EDIT: one <li class="entry"> per paper you want to feature,
+               newest first. Keep this to four or five — the point of the
+               section is that it is a choice, not a list. -->
+          <ul class="entry-list">
+            <li class="entry">
+              <a class="entry-figure" href="https://arxiv.org/abs/XXXX.XXXXX">
+                <img
+                  src="webpics/placeholder.svg"
+                  alt="Exclusion contours in the heavy neutral lepton mass-mixing plane"
+                />
+              </a>
+              <div>
+                <p class="entry-date">EDIT DATE</p>
+                <h3 class="entry-title">
+                  <a href="https://arxiv.org/abs/XXXX.XXXXX"
+                    >Title of the tau-philic heavy neutral lepton paper</a
+                  >
+                </h3>
+                <p class="entry-authors">
+                  <span class="self">Samiur R. Mir</span>, Co-author,
+                  Co-author
+                </p>
+                <p class="entry-meta">
+                  <a href="https://arxiv.org/abs/XXXX.XXXXX"
+                    >arXiv:XXXX.XXXXX</a
+                  >
+                </p>
+              </div>
+            </li>
+
+            <li class="entry">
+              <a class="entry-figure" href="https://arxiv.org/abs/XXXX.XXXXX">
+                <img
+                  src="webpics/placeholder.svg"
+                  alt="Flavor triangle for cosmogenic neutrinos with Lorentz invariance violation"
+                />
+              </a>
+              <div>
+                <p class="entry-date">EDIT DATE</p>
+                <h3 class="entry-title">
+                  <a href="https://arxiv.org/abs/XXXX.XXXXX"
+                    >Title of the cosmogenic neutrino paper</a
+                  >
+                </h3>
+                <p class="entry-authors">
+                  Co-author, <span class="self">Samiur R. Mir</span>,
+                  Co-author
+                </p>
+                <p class="entry-meta">
+                  <a href="https://arxiv.org/abs/XXXX.XXXXX"
+                    >arXiv:XXXX.XXXXX</a
+                  >
+                </p>
+              </div>
+            </li>
+
+            <li class="entry no-figure">
+              <div>
+                <p class="entry-date">EDIT DATE</p>
+                <h3 class="entry-title">
+                  <a href="https://arxiv.org/abs/XXXX.XXXXX"
+                    >A paper with no figure worth showing at thumbnail size</a
+                  >
+                </h3>
+                <p class="entry-authors">
+                  Co-author, Co-author, <span class="self">Samiur R. Mir</span>
+                </p>
+                <p class="entry-meta">
+                  <a href="https://arxiv.org/abs/XXXX.XXXXX"
+                    >arXiv:XXXX.XXXXX</a
+                  >
+                </p>
+              </div>
+            </li>
+          </ul>
+
+          <h2>Complete list</h2>
+
+          <p class="pub-status" id="pub-status">
+            Loading from INSPIRE-HEP&hellip;
+          </p>
+
+          <div id="pub-container"></div>
+        </main>
+
+        <footer class="site-footer">
+          <p>&copy; 2026 Samiur R. Mir</p>
+        </footer>
       </div>
-      <address class="masthead-contact">
-        <!-- <span class="place">Department of Physics</span> -->
-        <!-- <span class="street">Oklahoma State U.</span> -->
-        <!-- <span class="street">Street address, City, State ZIP</span> -->
-        <!-- <span class="sep"></span> -->
-        <a href="mailto:samiur.mir@okstate.edu">samiur.mir@okstate.edu</a>
-      </address>
-    </header>
-
-    <nav class="site-nav">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="research.html">Research</a></li>
-        <li><a href="publications.html" aria-current="page">Publications</a></li>
-        <li><a href="talks.html">Talks</a></li>
-        <li><a href="profile.html">CV</a></li>
-      </ul>
-    </nav>
-
-    <main class="page">
-      <h1>Publications</h1>
-
-      <p>
-        The complete record is on
-        <a
-          href="https://inspirehep.net/authors/1905709"
-          target="_blank"
-          rel="noopener noreferrer"
-          >INSPIRE-HEP</a
-        >
-        and
-        <a
-          href="https://scholar.google.com/citations?user=FG7m9tgAAAAJ&hl=en"
-          target="_blank"
-          rel="noopener noreferrer"
-          >Google Scholar</a
-        >.
-      </p>
-
-      <h2>Selected</h2>
-
-      <!-- EDIT: one <li class="entry"> per paper you want to feature, newest
-           first. Keep this to four or five — the point of the section is that
-           it is a choice, not a list. See README.txt for a card template. -->
-      <ul class="entry-list">
-        <li class="entry">
-          <a class="entry-figure" href="https://arxiv.org/abs/XXXX.XXXXX">
-            <img
-              src="webpics/placeholder.svg"
-              alt="Exclusion contours in the heavy neutral lepton mass-mixing plane"
-            />
-          </a>
-          <div>
-            <p class="entry-date">EDIT DATE</p>
-            <h3 class="entry-title">
-              <a href="https://arxiv.org/abs/XXXX.XXXXX"
-                >Title of the tau-philic heavy neutral lepton paper</a
-              >
-            </h3>
-            <p class="entry-authors">
-              <span class="self">Samiur R. Mir</span>, Co-author, Co-author
-            </p>
-            <p class="entry-meta">
-              <a href="https://arxiv.org/abs/XXXX.XXXXX">arXiv:XXXX.XXXXX</a>
-            </p>
-          </div>
-        </li>
-
-        <li class="entry">
-          <a class="entry-figure" href="https://arxiv.org/abs/XXXX.XXXXX">
-            <img
-              src="webpics/placeholder.svg"
-              alt="Flavor triangle for cosmogenic neutrinos with Lorentz invariance violation"
-            />
-          </a>
-          <div>
-            <p class="entry-date">EDIT DATE</p>
-            <h3 class="entry-title">
-              <a href="https://arxiv.org/abs/XXXX.XXXXX"
-                >Title of the cosmogenic neutrino paper</a
-              >
-            </h3>
-            <p class="entry-authors">
-              Co-author, <span class="self">Samiur R. Mir</span>, Co-author
-            </p>
-            <p class="entry-meta">
-              <a href="https://arxiv.org/abs/XXXX.XXXXX">arXiv:XXXX.XXXXX</a>
-            </p>
-          </div>
-        </li>
-
-        <li class="entry no-figure">
-          <div>
-            <p class="entry-date">EDIT DATE</p>
-            <h3 class="entry-title">
-              <a href="https://arxiv.org/abs/XXXX.XXXXX"
-                >A paper with no figure worth showing at thumbnail size</a
-              >
-            </h3>
-            <p class="entry-authors">
-              Co-author, Co-author, <span class="self">Samiur R. Mir</span>
-            </p>
-            <p class="entry-meta">
-              <a href="https://arxiv.org/abs/XXXX.XXXXX">arXiv:XXXX.XXXXX</a>
-            </p>
-          </div>
-        </li>
-      </ul>
-
-      <h2>Complete list</h2>
-
-      <p class="pub-status" id="pub-status">Loading from INSPIRE-HEP&hellip;</p>
-
-      <div id="pub-container"></div>
-    </main>
-
-    <footer class="site-footer">
-      <p>&copy; 2026 Samiur R. Mir</p>
-    </footer>
+    </div>
 
     <script src="inspire.js"></script>
   </body>

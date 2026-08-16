@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Talks &middot; Samiur R. Mir</title>
+    <title>CV &middot; Samiur R. Mir</title>
     <meta
       name="description"
-      content="Seminars and conference talks given by Samiur R. Mir."
+      content="Curriculum vitae for Samiur R. Mir."
     />
     <link rel="icon" type="image/png" href="favicon.png" sizes="32x32" />
     <link rel="stylesheet" href="main.css" />
@@ -95,78 +95,41 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="research.html">Research</a></li>
             <li><a href="publications.html">Publications</a></li>
-            <li><a href="talks.html" aria-current="page">Talks</a></li>
-            <li><a href="cv.html">CV</a></li>
+            <li><a href="talks.html">Talks</a></li>
+            <li><a href="cv.html" aria-current="page">CV</a></li>
           </ul>
         </nav>
       </aside>
 
       <div class="content">
         <main class="page">
-          <h1>Talks</h1>
+          <h1>CV</h1>
 
-          <p>
-            Recent seminars and conference presentations. Titles link to the
-            Indico page or program entry where slides are posted.
+          <div class="cv-actions">
+            <!-- EDIT: update this date whenever you replace the PDF. -->
+            <span class="note">Last updated August 2026</span>
+            <a href="CV-samiur.pdf" download>Download PDF</a>
+            <a href="CV-samiur.pdf" target="_blank" rel="noopener noreferrer"
+              >Open in new tab</a
+            >
+          </div>
+
+          <!-- iframe renders the PDF inline in Chrome, Firefox, and desktop
+               Safari. Some mobile browsers can't preview PDFs in an iframe,
+               so the links above and the fallback text below cover that
+               case. -->
+          <iframe
+            src="CV-samiur.pdf"
+            class="cv-viewer"
+            title="Samiur R. Mir — CV"
+          >
+          </iframe>
+          <p class="cv-fallback">
+            If the CV doesn't display above,
+            <a href="CV-samiur.pdf" target="_blank" rel="noopener noreferrer"
+              >open the PDF directly</a
+            >.
           </p>
-
-          <!-- EDIT: newest first. The figure is a screenshot of one slide —
-               the money plot, not the title slide. Add class="no-figure" to
-               the <li> and delete the <a class="entry-figure"> block if you
-               have none. -->
-          <ul class="entry-list">
-            <li class="entry">
-              <a
-                class="entry-figure"
-                href="https://indico.example.org/event/0000/"
-              >
-                <img
-                  src="webpics/placeholder.svg"
-                  alt="Slide showing exclusion limits on heavy neutral lepton mixing"
-                />
-              </a>
-              <div>
-                <p class="entry-date">EDIT DATE</p>
-                <p class="eyebrow">Pheno 2026, University of Pittsburgh</p>
-                <h3 class="entry-title">
-                  <a href="https://indico.example.org/event/0000/"
-                    >Renormalization group evolution of neutrino mixing and
-                    double-bang events at IceCube</a
-                  >
-                </h3>
-              </div>
-            </li>
-
-            <li class="entry">
-              <a
-                class="entry-figure"
-                href="https://indico.example.org/event/0000/"
-              >
-                <img
-                  src="webpics/placeholder.svg"
-                  alt="Slide showing the solar heavy neutral lepton production diagram"
-                />
-              </a>
-              <div>
-                <p class="entry-date">EDIT DATE</p>
-                <p class="eyebrow">Group seminar, Your institution</p>
-                <h3 class="entry-title">
-                  <a href="https://indico.example.org/event/0000/"
-                    >Constraining tau-philic heavy neutral leptons with
-                    spacecraft electron spectra</a
-                  >
-                </h3>
-              </div>
-            </li>
-
-            <li class="entry no-figure">
-              <div>
-                <p class="entry-date">EDIT DATE</p>
-                <p class="eyebrow">Journal club, Your institution</p>
-                <h3 class="entry-title">A talk with no slide screenshot</h3>
-              </div>
-            </li>
-          </ul>
         </main>
 
         <footer class="site-footer">

@@ -28,162 +28,158 @@
     />
   </head>
   <body>
-    <!-- EDIT: this masthead block is identical on every page. Change it here
-         first, then paste it into the other four files. -->
-    <header class="masthead">
-      <div>
-        <p class="masthead-name"><a href="index.html">Samiur R. Mir</a></p>
-      </div>
-      <address class="masthead-contact">
-        <!-- <span class="place">Department of Physics</span> -->
-        <!-- <span class="street">Oklahoma State U.</span> -->
-        <!-- <span class="street">Street address, City, State ZIP</span> -->
-        <!-- <span class="sep"></span> -->
-        <a href="mailto:samiur.mir@okstate.edu">samiur.mir@okstate.edu</a>
-      </address>
-    </header>
-
-    <nav class="site-nav">
-      <ul>
-        <li><a href="index.html" aria-current="page">Home</a></li>
-        <li><a href="research.html">Research</a></li>
-        <li><a href="publications.html">Publications</a></li>
-        <li><a href="talks.html">Talks</a></li>
-        <li><a href="profile.html">Contact</a></li>
-      </ul>
-    </nav>
-
-    <main class="page">
-      <div class="intro">
+    <div class="layout">
+      <!-- EDIT: this sidebar block is identical on every page. Change it
+           here first, then paste the whole <aside> into the other four
+           files, updating only the aria-current="page" attribute. -->
+      <aside class="sidebar">
         <img
           src="webpics/IMG_1895.jpg"
           alt="Samiur R. Mir"
-          class="portrait"
+          class="sidebar-portrait"
         />
 
-        <div class="intro-body">
+        <p class="sidebar-name"><a href="index.html">Samiur R. Mir</a></p>
+
+        <!-- EDIT: confirm this is your current position and institution. -->
+        <p class="sidebar-role">
+          Ph.D. Student, Department of Physics<br />
+          Oklahoma State University
+        </p>
+
+        <p class="sidebar-email">
+          <a href="mailto:samiur.mir@okstate.edu">samiur.mir@okstate.edu</a>
+        </p>
+
+        <ul class="sidebar-icons">
+          <li>
+            <a
+              href="https://inspirehep.net/authors/1905709"
+              title="INSPIRE-HEP"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="inspire.png" alt="INSPIRE-HEP" class="icon" />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://scholar.google.com/citations?user=FG7m9tgAAAAJ&hl=en"
+              title="Google Scholar"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="ai ai-google-scholar" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/samiur06"
+              title="GitHub"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fab fa-github" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/md-samiur-rahman-mir/"
+              title="LinkedIn"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fab fa-linkedin" aria-hidden="true"></i>
+            </a>
+          </li>
+        </ul>
+
+        <nav class="sidebar-nav">
+          <ul>
+            <li><a href="index.html" aria-current="page">Home</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="talks.html">Talks</a></li>
+            <li><a href="cv.html">CV</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <div class="content">
+        <main class="page">
           <h1>Samiur R. Mir</h1>
 
           <p class="lede">
-            <!-- EDIT: state your position and institution in one line. -->
-            I am a graduate researcher in high energy physics phenomenology, working at the intersection of theory and experiment.
+            I am a graduate researcher in high energy physics phenomenology,
+            working at the intersection of theory and experiment.
           </p>
 
-          <p class="lede">
-            Standard Model is a the rulebook that tells us how the elementary particles intereact in Nature. 
-            It has been a very successful model, but incomplete as they cannot explain neutrino mass and dark matter. 
-            As a phenomenologist, I connect theoretical model prediction and real data and complement our current endeavor to understand the physics beyond the Standard Model. 
-            I am also interested in precision measurements from the standard calculations, that will help us look for new physics signatures, across environments that run from
-            terrestrial detectors to astrophysical laboratories. 
-            Furthermore, I am fascinated in machine learning methods for hypothesis testing, limit setting, and anomaly resolution. 
+          <p>
+            The Standard Model is the rulebook that tells us how the
+            elementary particles interact in Nature. It has been a very
+            successful model, but incomplete, as it cannot explain neutrino
+            mass and dark matter. As a phenomenologist, I connect theoretical
+            model predictions and real data, complementing our current
+            endeavor to understand the physics beyond the Standard Model. I am
+            also interested in precision measurements from Standard Model
+            calculations, which help us look for new physics signatures,
+            across environments that run from terrestrial detectors to
+            astrophysical laboratories. I am also fascinated by machine
+            learning methods for hypothesis testing, limit setting, and
+            anomaly resolution.
           </p>
 
           <p class="note">
             More on <a href="research.html">what I work on</a>, a
             <a href="publications.html">publication list</a> kept current from
             INSPIRE, recent <a href="talks.html">talks</a>, and my
-            <a href="profile.html">CV</a>.
+            <a href="cv.html">CV</a>.
           </p>
-        </div>
+
+          <h2>Selected figures</h2>
+
+          <!-- EDIT: swap in three real plots from your own papers. This row
+               is the first thing most visitors look at, so pick figures that
+               read at thumbnail size — an exclusion contour, a flavor
+               triangle, a spectrum. Delete a <figure> block to show fewer. -->
+          <div class="figure-strip">
+            <figure>
+              <img
+                src="webpics/placeholder.svg"
+                alt="Exclusion limits in the heavy neutral lepton mass and mixing plane"
+              />
+              <figcaption>
+                Exclusion limits on tau-philic heavy neutral leptons from
+                solar production.
+              </figcaption>
+            </figure>
+            <figure>
+              <img
+                src="webpics/placeholder.svg"
+                alt="Flavor composition triangle for cosmogenic neutrinos"
+              />
+              <figcaption>
+                Arriving flavor composition of cosmogenic neutrinos under
+                Lorentz-violating operators.
+              </figcaption>
+            </figure>
+            <figure>
+              <img
+                src="webpics/placeholder.svg"
+                alt="Cosmogenic neutrino flux as a function of energy"
+              />
+              <figcaption>
+                Cosmogenic neutrino flux from ultra-high-energy cosmic ray
+                propagation.
+              </figcaption>
+            </figure>
+          </div>
+        </main>
+
+        <footer class="site-footer">
+          <p>&copy; 2026 Samiur R. Mir</p>
+        </footer>
       </div>
-
-      <h2>Selected figures</h2>
-
-      <!-- EDIT: swap in three real plots from your own papers. This row is the
-           first thing most visitors look at, so pick figures that read at
-           thumbnail size — an exclusion contour, a flavor triangle, a spectrum.
-           Delete a <figure> block to show fewer. -->
-      <div class="figure-strip">
-        <figure>
-          <img
-            src="webpics/placeholder.svg"
-            alt="Exclusion limits in the heavy neutral lepton mass and mixing plane"
-          />
-          <figcaption>
-            Exclusion limits on tau-philic heavy neutral leptons from solar
-            production.
-          </figcaption>
-        </figure>
-        <figure>
-          <img
-            src="webpics/placeholder.svg"
-            alt="Flavor composition triangle for cosmogenic neutrinos"
-          />
-          <figcaption>
-            Arriving flavor composition of cosmogenic neutrinos under
-            Lorentz-violating operators.
-          </figcaption>
-        </figure>
-        <figure>
-          <img
-            src="webpics/placeholder.svg"
-            alt="Cosmogenic neutrino flux as a function of energy"
-          />
-          <figcaption>
-            Cosmogenic neutrino flux from ultra-high-energy cosmic ray
-            propagation.
-          </figcaption>
-        </figure>
-      </div>
-
-      <h2>Elsewhere</h2>
-
-      <ul class="icons">
-        <li>
-          <a
-            href="https://inspirehep.net/authors/1905709"
-            title="INSPIRE-HEP"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src="inspire.png" alt="INSPIRE-HEP" class="icon" />
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://scholar.google.com/citations?user=FG7m9tgAAAAJ&hl=en"
-            title="Google Scholar"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i class="ai ai-google-scholar" aria-hidden="true"></i>
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://github.com/samiur06"
-            title="GitHub"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i class="fab fa-github" aria-hidden="true"></i>
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://www.linkedin.com/in/md-samiur-rahman-mir/"
-            title="LinkedIn"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i class="fab fa-linkedin" aria-hidden="true"></i>
-          </a>
-        </li>
-        <li>
-          <a
-            href="CV-samiur.pdf"
-            title="CV"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i class="ai ai-cv" aria-hidden="true"></i>
-          </a>
-        </li>
-      </ul>
-    </main>
-
-    <footer class="site-footer">
-      <p>&copy; 2026 Samiur R. Mir</p>
-    </footer>
+    </div>
   </body>
 </html>

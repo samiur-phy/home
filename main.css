@@ -111,13 +111,13 @@ img {
 }
 
 .sidebar-name a {
-  color: var(--ink);
+  color: #7a3b69;
   border-bottom: 0;
 }
 
 .sidebar-role {
   margin: 0.4rem 0 0;
-  color: var(--muted);
+  color: #b8622c;
   font-size: 0.875rem;
   line-height: 1.45;
 }
@@ -197,12 +197,12 @@ img {
 }
 
 .sidebar-nav a:hover {
-  color: var(--ink);
+  color: #2f7d6e;
 }
 
 .sidebar-nav a[aria-current="page"] {
-  color: var(--ink);
-  border-left-color: var(--accent);
+  color: #2f7d6e;
+  border-left-color: #2f7d6e;
 }
 
 /* ------------------------------------------------------------ content --- */

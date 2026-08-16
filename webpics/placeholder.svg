@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Figure placeholder">
+  <rect width="400" height="300" fill="none" />
+  <g fill="none" stroke="#9aa4b2" stroke-width="1.5" opacity="0.55">
+    <path d="M60 240 L60 50" />
+    <path d="M60 240 L350 240" />
+    <path d="M60 210 C 130 205, 190 170, 230 120 S 320 60, 350 55" stroke-dasharray="6 5" />
+  </g>
+  <text x="205" y="285" fill="#9aa4b2" font-family="ui-monospace, monospace" font-size="13" text-anchor="middle" opacity="0.8">replace with your figure</text>
+</svg>

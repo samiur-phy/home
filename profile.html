@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CV &middot; Samiur R. Mir</title>
+    <meta
+      name="description"
+      content="Curriculum vitae and academic profiles for Samiur R. Mir."
+    />
+    <link rel="icon" type="image/png" href="favicon.png" sizes="32x32" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="masthead">
+      <div>
+        <p class="masthead-name"><a href="index.html">Samiur R. Mir</a></p>
+        <p class="masthead-role">
+          Particle phenomenologist &mdash; neutrinos and dark matter
+        </p>
+      </div>
+      <address class="masthead-contact">
+        <span class="place">Department of Physics</span>
+        <span class="street">Your institution</span>
+        <span class="street">Street address, City, State ZIP</span>
+        <span class="sep"></span>
+        <a href="mailto:your.name@example.edu">your.name@example.edu</a>
+      </address>
+    </header>
+
+    <nav class="site-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="talks.html">Talks</a></li>
+        <li><a href="profile.html" aria-current="page">CV</a></li>
+      </ul>
+    </nav>
+
+    <main class="page">
+      <h1>CV</h1>
+
+      <p class="lede">
+        <a href="CV-samiur.pdf" target="_blank" rel="noopener noreferrer"
+          >Download my CV (PDF)</a
+        >
+        <!-- EDIT: update this date whenever you replace the PDF. -->
+        <span class="note">&mdash; last updated August 2026</span>
+      </p>
+
+      <h2>Profiles</h2>
+      <ul class="link-list">
+        <li>
+          <a
+            href="https://inspirehep.net/authors/1905709"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span class="link-name">INSPIRE-HEP</span>
+            <span class="link-detail">Complete publication and citation record</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://scholar.google.com/citations?user=FG7m9tgAAAAJ&hl=en"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span class="link-name">Google Scholar</span>
+            <span class="link-detail">Citations across fields</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://arxiv.org/a/mir_s_1"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span class="link-name">arXiv</span>
+            <span class="link-detail">
+              Preprints
+              <!-- EDIT: confirm this author identifier resolves, or delete. -->
+            </span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://github.com/samiur06"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span class="link-name">GitHub</span>
+            <span class="link-detail">Analysis code and this site</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/md-samiur-rahman-mir/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span class="link-name">LinkedIn</span>
+            <span class="link-detail">Professional background</span>
+          </a>
+        </li>
+        <!-- EDIT: uncomment and fill in once you have an ORCID.
+        <li>
+          <a href="https://orcid.org/0000-0000-0000-0000" target="_blank" rel="noopener noreferrer">
+            <span class="link-name">ORCID</span>
+            <span class="link-detail">0000-0000-0000-0000</span>
+          </a>
+        </li>
+        -->
+      </ul>
+
+      <h2>Contact</h2>
+      <p>
+        <!-- EDIT: replace with the address you want public. Assembling it in
+             script is a mild deterrent against scrapers, nothing more. -->
+        <span id="email"></span>
+      </p>
+      <script>
+        (function () {
+          var user = "your.name";
+          var host = "example.edu";
+          var el = document.getElementById("email");
+          var a = document.createElement("a");
+          a.href = "mailto:" + user + "@" + host;
+          a.textContent = user + "@" + host;
+          el.appendChild(a);
+        })();
+      </script>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; 2026 Samiur R. Mir</p>
+    </footer>
+  </body>
+</html>

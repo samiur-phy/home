@@ -28,6 +28,16 @@
     />
   </head>
   <body>
+    <nav class="top-nav">
+      <ul>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="talks.html">Talks</a></li>
+        <li><a href="cv.html">CV</a></li>
+      </ul>
+    </nav>
+
     <div class="layout">
       <!-- EDIT: this sidebar block is identical on every page. Change it
            here first, then paste the whole <aside> into the other four
@@ -95,15 +105,6 @@
           </li>
         </ul>
 
-        <nav class="sidebar-nav">
-          <ul>
-            <li><a href="index.html" aria-current="page">Home</a></li>
-            <li><a href="research.html">Research</a></li>
-            <li><a href="publications.html">Publications</a></li>
-            <li><a href="talks.html">Talks</a></li>
-            <li><a href="cv.html">CV</a></li>
-          </ul>
-        </nav>
       </aside>
 
       <div class="content">
@@ -143,38 +144,54 @@
                is the first thing most visitors look at, so pick figures that
                read at thumbnail size — an exclusion contour, a flavor
                triangle, a spectrum. Delete a <figure> block to show fewer. -->
-          <div class="figure-strip">
-            <figure>
-              <img
-                src="webpics/placeholder.svg"
-                alt="Exclusion limits in the heavy neutral lepton mass and mixing plane"
-              />
-              <figcaption>
-                Exclusion limits on tau-philic heavy neutral leptons from
-                solar production.
-              </figcaption>
-            </figure>
-            <figure>
-              <img
-                src="webpics/placeholder.svg"
-                alt="Flavor composition triangle for cosmogenic neutrinos"
-              />
-              <figcaption>
-                Arriving flavor composition of cosmogenic neutrinos under
-                Lorentz-violating operators.
-              </figcaption>
-            </figure>
-            <figure>
-              <img
-                src="webpics/placeholder.svg"
-                alt="Cosmogenic neutrino flux as a function of energy"
-              />
-              <figcaption>
-                Cosmogenic neutrino flux from ultra-high-energy cosmic ray
-                propagation.
-              </figcaption>
-            </figure>
-          </div>
+                <!-- EDIT: captions are guesses from filenames — rewrite them.
+           Scrolls right to left automatically; the second, identical
+           set of 6 figures (aria-hidden) is required for the loop to
+           look seamless — keep it in sync with the first set. -->
+      <div class="figure-marquee">
+        <div class="figure-track">
+          <figure>
+            <img src="webpics/paper_figures/LIV_ultra_high_nu/tau_count_d6_grand200k_srcsimprop.png" alt="Tau neutrino event counts at GRAND under dimension-6 Lorentz-violating operators, for a SimProp-generated source flux." />
+            <figcaption>Tau neutrino event counts at GRAND under dimension-6 Lorentz-violating operators, for a SimProp-generated source flux.</figcaption>
+          </figure>
+<figure>
+            <img src="webpics/paper_figures/mag_moment_collider/muC10Tcwcb3w.png" alt="Sensitivity to the active-to-sterile neutrino magnetic moment, W-boson channel, at a 10 TeV muon collider." />
+            <figcaption>Sensitivity to the active-to-sterile neutrino magnetic moment, W-boson channel, at a 10 TeV muon collider.</figcaption>
+          </figure>
+          <figure>
+            <img src="webpics/paper_figures/neutrino_mass_astro_limit/neutrino_events.png" alt="Expected neutrino event spectrum from binary neutron star mergers up to redshift z." />
+            <figcaption>Expected neutrino event spectrum from binary neutron star mergers up to redshift z.</figcaption>
+          </figure>
+          <figure>
+            <img src="webpics/paper_figures/running_PMNS_IceCube/run_P_abovebelowNuTeV.png" alt="The oscillation probability at zero baseline in the presence of RG running of the mixing matrix." />
+            <figcaption>The oscillation probability at zero baseline in the presence of RG running of the mixing matrix.</figcaption>
+          </figure>
+          <figure>
+            <img src="webpics/paper_figures/running_PMNS_IceCube/count_difference_src120.png" alt="The neutrino event count difference at IceCube between the RG-running mixing matrix case and the standard case." />
+            <figcaption>The neutrino event count difference at IceCube between the RG-running mixing matrix case and the standard case.</figcaption>
+          </figure>
+          <figure aria-hidden="true">
+            <img src="webpics/paper_figures/LIV_ultra_high_nu/tau_count_d6_grand200k_srcsimprop.png" alt="Tau neutrino event counts at GRAND under dimension-6 Lorentz-violating operators, for a SimProp-generated source flux." />
+            <figcaption>Tau neutrino event counts at GRAND under dimension-6 Lorentz-violating operators, for a SimProp-generated source flux.</figcaption>
+          </figure>
+<figure aria-hidden="true">
+            <img src="webpics/paper_figures/mag_moment_collider/muC10Tcwcb3w.png" alt="Sensitivity to the active-to-sterile neutrino magnetic moment, W-boson channel, at a 10 TeV muon collider." />
+            <figcaption>Sensitivity to the active-to-sterile neutrino magnetic moment, W-boson channel, at a 10 TeV muon collider.</figcaption>
+          </figure>
+          <figure aria-hidden="true">
+            <img src="webpics/paper_figures/neutrino_mass_astro_limit/neutrino_events.png" alt="Expected neutrino event spectrum from binary neutron star mergers up to redshift z." />
+            <figcaption>Expected neutrino event spectrum from binary neutron star mergers up to redshift z.</figcaption>
+          </figure>
+          <figure aria-hidden="true">
+            <img src="webpics/paper_figures/running_PMNS_IceCube/run_P_abovebelowNuTeV.png" alt="The oscillation probability at zero baseline in the presence of RG running of the mixing matrix." />
+            <figcaption>The oscillation probability at zero baseline in the presence of RG running of the mixing matrix.</figcaption>
+          </figure>
+          <figure aria-hidden="true">
+            <img src="webpics/paper_figures/running_PMNS_IceCube/count_difference_src120.png" alt="The difference in neutrino event counts between the RG-running mixing matrix case and the standard case, at IceCube." />
+            <figcaption>The difference in neutrino event counts between the RG-running mixing matrix case and the standard case, at IceCube.</figcaption>
+          </figure>
+        </div>
+      </div>
         </main>
 
         <footer class="site-footer">
@@ -182,5 +199,60 @@
         </footer>
       </div>
     </div>
+    <div id="lightbox" class="lightbox" hidden>
+      <button id="lightbox-close" class="lightbox-close" aria-label="Close">&times;</button>
+      <img id="lightbox-img" src="" alt="" />
+      <p id="lightbox-caption" class="lightbox-caption"></p>
+    </div>
+
+    <script>
+      (function () {
+        var lightbox = document.getElementById("lightbox");
+        var lightboxImg = document.getElementById("lightbox-img");
+        var lightboxCaption = document.getElementById("lightbox-caption");
+        var track = document.querySelector(".figure-track");
+
+        function open(img) {
+          lightboxImg.src = img.src;
+          lightboxImg.alt = img.alt;
+          lightboxCaption.textContent = img.alt;
+          lightbox.hidden = false;
+          if (track) track.style.animationPlayState = "paused";
+          document.body.style.overflow = "hidden";
+        }
+
+        function close() {
+          lightbox.hidden = true;
+          lightboxImg.src = "";
+          if (track) track.style.animationPlayState = "";
+          document.body.style.overflow = "";
+        }
+
+        document.querySelectorAll(".figure-track img").forEach(function (img) {
+          img.setAttribute("tabindex", "0");
+          img.setAttribute("role", "button");
+          img.addEventListener("click", function () {
+            open(img);
+          });
+          img.addEventListener("keydown", function (e) {
+            if (e.key === "Enter" || e.key === " ") {
+              e.preventDefault();
+              open(img);
+            }
+          });
+        });
+
+        lightbox.addEventListener("click", function (e) {
+          if (e.target === lightbox) close();
+        });
+
+        document.getElementById("lightbox-close").addEventListener("click", close);
+
+        document.addEventListener("keydown", function (e) {
+          if (e.key === "Escape" && !lightbox.hidden) close();
+        });
+      })();
+    </script>
+
   </body>
 </html>

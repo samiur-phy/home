@@ -866,3 +866,16 @@ p * {
   max-width: 100%;
   box-sizing: border-box;
 }
+
+/* -------------------------------------------------- Sidebar Icons Mobile Fix --- */
+
+@media (max-width: 56rem) {
+  .sidebar-icons {
+    grid-column: 1 / -1;
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    gap: 1rem !important;
+    margin-top: 0.8rem !important;
+  }
+}

@@ -26,6 +26,10 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.2/css/academicons.min.css"
       crossorigin="anonymous"
     />
+      <script>
+      MathJax = { tex: { inlineMath: [['$', '$']] } };
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js"></script>
   </head>
   <body>
     <nav class="top-nav">
@@ -69,6 +73,16 @@
           </li>
           <li>
             <a
+              href="https://orcid.org/0000-0002-6531-2174"
+              title="ORCID"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="ORCID_iD.svg.webp" alt="ORCID" class="icon" />
+            </a>
+          </li>
+          <li>
+            <a
               href="https://scholar.google.com/citations?user=FG7m9tgAAAAJ&hl=en"
               title="Google Scholar"
               target="_blank"
@@ -106,13 +120,32 @@
           <h1>CV</h1>
 
           <div class="cv-actions">
-            <!-- EDIT: update this date whenever you replace the PDF. -->
-            <span class="note">Last updated August 2026</span>
+            <span class="note" id="cv-updated">Last update:&hellip;</span>
             <a href="CV-samiur.pdf" download>Download PDF</a>
             <a href="CV-samiur.pdf" target="_blank" rel="noopener noreferrer"
               >Open in new tab</a
             >
           </div>
+
+          <script>
+            (function () {
+              var el = document.getElementById("cv-updated");
+              fetch("CV-samiur.pdf", { method: "HEAD" })
+                .then(function (res) {
+                  var lm = res.headers.get("Last-Modified");
+                  if (!lm) throw new Error("no Last-Modified header");
+                  var d = new Date(lm);
+                  var formatted = d.toLocaleDateString("en-US", {
+                    year: "numeric",
+                    month: "long",
+                  });
+                  el.textContent = "Last updated " + formatted;
+                })
+                .catch(function () {
+                  el.textContent = "";
+                });
+            })();
+          </script>
 
           <!-- iframe renders the PDF inline in Chrome, Firefox, and desktop
                Safari. Some mobile browsers can't preview PDFs in an iframe,

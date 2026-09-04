@@ -358,7 +358,7 @@ hr {
   display: flex;
   gap: 1.5rem;
   width: max-content;
-  animation: figure-scroll 32s linear infinite;
+  animation: figure-scroll 26s linear infinite;
 }
 
 .figure-track figure {
@@ -371,7 +371,7 @@ hr {
   width: 414px;
   height: 311px;
   object-fit: contain;
-  background: var(--accent-bg);
+  background: #ffffff;
   border: 1px solid var(--rule);
   border-radius: 2px;
 }

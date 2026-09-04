@@ -842,3 +842,27 @@ p, .lede, .note, body {
 p code, p a {
   word-break: break-word;
 }
+
+/* -------------------------------------------------- Mobile Content & Paragraph Width Fix --- */
+
+/* Force layout containers to respect mobile screen edges */
+.layout, .content, .main-content, main, article {
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+  overflow-x: hidden;
+}
+
+/* Ensure text blocks wrap smoothly within parent containers */
+p, .lede, .note, body {
+  max-width: 100% !important;
+  word-wrap: break-word;
+  overflow-wrap: anywhere;
+  white-space: normal !important;
+}
+
+/* Prevent inline elements from pushing layout beyond screen bounds */
+p * {
+  max-width: 100%;
+  box-sizing: border-box;
+}

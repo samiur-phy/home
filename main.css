@@ -775,3 +775,57 @@ hr {
     transition: none !important;
   }
 }
+
+/* -------------------------------------------------- Mobile Fixes & Enhancements --- */
+
+/* Prevent horizontal scroll from tables on mobile screens */
+table {
+  width: 100%;
+  max-width: 100%;
+  display: block;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+@media (max-width: 36rem) {
+  /* Adjust layout padding on small screens */
+  .layout {
+    padding: 0 1rem;
+  }
+
+  /* Compact sidebar header layout on mobile */
+  .sidebar {
+    grid-template-columns: 4rem 1fr;
+    column-gap: 1rem;
+  }
+
+  .sidebar-portrait {
+    width: 4rem;
+  }
+
+  /* Transform sidebar nav to flexible full-width buttons */
+  .sidebar-nav ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+    gap: 0.5rem;
+  }
+
+  .sidebar-nav a {
+    text-align: center;
+    padding: 0.5rem 0.25rem;
+  }
+
+  /* Scale typography down for mobile viewports */
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .lede {
+    font-size: 1.05rem;
+  }
+
+  /* Prevent lightbox overflow on narrow screens */
+  .lightbox {
+    padding: 1rem;
+  }
+}

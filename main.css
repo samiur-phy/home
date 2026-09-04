@@ -829,3 +829,16 @@ table {
     padding: 1rem;
   }
 }
+
+/* -------------------------------------------------- Paragraph Text Wrapping Fix --- */
+
+p, .lede, .note, body {
+  overflow-wrap: break-word;
+  word-break: normal;
+  hyphens: auto;
+}
+
+/* Ensure code or inline elements inside paragraphs do not cause overflow */
+p code, p a {
+  word-break: break-word;
+}
